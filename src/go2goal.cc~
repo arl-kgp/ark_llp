@@ -135,6 +135,7 @@ void Go2Goal::false_dest(double x, double y, double z, double theta)
   m_false.data = false_point.str();
   m_point.data = point.str();
   m_start.data = start.str();
+  ROS_INFO("return1");
   go.publish(m_clear);
   ros::spinOnce();
   loop_rate.sleep();
